@@ -1,9 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #b4f6f3;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 
@@ -243,15 +246,12 @@ button:hover {
     background-color: #0056b3;
 }
 
-
 footer {
     background-color: black;
     color: gold;
     padding: 12px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    margin-top: auto; 
 }
-
 
 
