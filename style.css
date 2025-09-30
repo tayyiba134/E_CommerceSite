@@ -1,13 +1,14 @@
 html, body {
+    font-family: Arial, sans-serif;
     height: 100%;
     margin: 0;
+    padding: 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: #b4f6f3; 
 }
 
-main {
-    flex: 1;
-}
 
 
 nav ul {
