@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #b4f6f3;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    width:100% ;
+    margin: 0%;
+    background-color: #82087a;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration:rgb(166, 231, 246);
+    padding: 8px 15px;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.description-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.description-container p {
+    font-size: 18px;
+    color: #111111;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.image-container {
+    display: flex;  
+    justify-content: space-between;  
+    gap: 20px;  
+    flex-wrap: wrap;  
+    max-width: 1200px;  
+    margin: 0 auto;  
+}
+
+.image-container img {
+    width: 48%;  
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.products-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 15px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 32px;
+    color: #444;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));  
+    gap: 20px;
+    padding: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.product {
+    background: white;
+    padding: 12px;  
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    max-width: 220px; 
+    margin: auto;
+}
+
+.product:hover {
+    transform: translateY(-3px);
+}
+
+
+.product img {
+    width: 100%; 
+    max-width: 180px; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+
+.product h3 {
+    font-size: 18px;  
+    margin: 8px 0;
+    color: #333;
+}
+
+.description {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 16px;  
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+.cart-btn {
+    background-color: gold;
+    color: black;
+    padding: 8px 12px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;  
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgb(242, 232, 232);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-info {
+    width: 45%;
+    text-align: left;
+}
+
+.contact-info h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: black;
+    color: gold;
+    padding: 12px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
