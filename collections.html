@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Jewelry Store - Premium Collection</title>
+    <title>Jewelry Collection | Luxury Jewelry Store</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -45,8 +45,8 @@
             <div class="nav-menu">
                 <div class="container">
                     <ul class="main-menu">
-                        <li><a href="home.html" class="active">Home</a></li>
-                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="collections.html" class="active">Collections</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -54,64 +54,197 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Elegance & Luxury Redefined</h1>
-                <p class="hero-subtitle">Discover timeless beauty with our exclusive collection of luxury jewelry. Every piece is crafted with meticulous attention to detail.</p>
-                <div class="hero-buttons">
-                    <button class="btn-primary" onclick="showAlert()">Shop Now</button>
-                    <button class="btn-secondary">View Collection</button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="image1.jpg" alt="Luxury Jewelry Collection">
+        
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Exclusive Jewelry Collection</h1>
+                <p class="page-subtitle">Discover timeless elegance with our finely crafted pieces. Each piece is designed to bring out your unique style and sophistication.</p>
             </div>
         </section>
 
        
-        <section class="trust-signals">
+        <section class="product-filters">
             <div class="container">
-                <div class="trust-item">
-                    <i class="fas fa-shipping-fast"></i>
-                    <h3>Free Shipping</h3>
-                    <p>On orders over $100</p>
-                </div>
-                <div class="trust-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Secure Payment</h3>
-                    <p>100% secure checkout</p>
-                </div>
-                <div class="trust-item">
-                    <i class="fas fa-undo"></i>
-                    <h3>Easy Returns</h3>
-                    <p>30-day return policy</p>
-                </div>
-                <div class="trust-item">
-                    <i class="fas fa-award"></i>
-                    <h3>Premium Quality</h3>
-                    <p>Certified authentic</p>
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <select>
+                            <option>All Products</option>
+                            <option>Rings</option>
+                            <option>Necklaces</option>
+                            <option>Earrings</option>
+                            <option>Bracelets</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Price Range:</label>
+                        <select>
+                            <option>All Prices</option>
+                            <option>Under $500</option>
+                            <option>$500 - $1000</option>
+                            <option>$1000 - $2000</option>
+                            <option>Over $2000</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sort By:</label>
+                        <select>
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </section>
 
        
-        <section class="featured-products">
+        <section class="products-section">
             <div class="container">
-                <h2>Featured Collections</h2>
-                <p class="section-subtitle">Handpicked pieces that define luxury and elegance</p>
-                
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="product1.jpg" alt="Diamond Ring">
+                            <img src="product1.jpg" alt="Fine Necklace with Pendant">
                             <div class="product-overlay">
                                 <button class="btn-quick-view">Quick View</button>
                                 <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Diamond Solitaire Ring</h3>
+                            <h3>Fine Necklace with Pendant</h3>
+                            <p class="product-category">Necklaces</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$250</span>
+                            </div>
+                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product2.jpg" alt="Gold Necklace">
+                            <div class="product-overlay">
+                                <button class="btn-quick-view">Quick View</button>
+                                <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gold Necklace</h3>
+                            <p class="product-category">Necklaces</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$800</span>
+                            </div>
+                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product3.jpg" alt="Pearl Bracelet">
+                            <div class="product-overlay">
+                                <button class="btn-quick-view">Quick View</button>
+                                <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pearl Bracelet</h3>
+                            <p class="product-category">Bracelets</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$350</span>
+                            </div>
+                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product4.jpg" alt="Diamond Earrings">
+                            <div class="product-overlay">
+                                <button class="btn-quick-view">Quick View</button>
+                                <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Diamond Earrings</h3>
+                            <p class="product-category">Earrings</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$1,700</span>
+                            </div>
+                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product5.jpg" alt="Gold Earrings">
+                            <div class="product-overlay">
+                                <button class="btn-quick-view">Quick View</button>
+                                <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gold Earrings</h3>
+                            <p class="product-category">Earrings</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.6)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$1,500</span>
+                            </div>
+                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product6.jpg" alt="Luxury Diamond Ring">
+                            <div class="product-overlay">
+                                <button class="btn-quick-view">Quick View</button>
+                                <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Diamond Ring</h3>
                             <p class="product-category">Rings</p>
                             <div class="product-rating">
                                 <i class="fas fa-star"></i>
@@ -122,8 +255,7 @@
                                 <span>(4.9)</span>
                             </div>
                             <div class="product-price">
-                                <span class="current-price">$2,499</span>
-                                <span class="original-price">$2,999</span>
+                                <span class="current-price">$2,200</span>
                             </div>
                             <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
                         </div>
@@ -131,7 +263,7 @@
 
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="product2.jpg" alt="Pearl Necklace">
+                            <img src="product7.jpg" alt="Pearl Necklace">
                             <div class="product-overlay">
                                 <button class="btn-quick-view">Quick View</button>
                                 <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
@@ -149,7 +281,7 @@
                                 <span>(4.8)</span>
                             </div>
                             <div class="product-price">
-                                <span class="current-price">$1,299</span>
+                                <span class="current-price">$1,200</span>
                             </div>
                             <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
                         </div>
@@ -157,79 +289,42 @@
 
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="product3.jpg" alt="Gold Earrings">
+                            <img src="product8.jpg" alt="Fine Diamond Necklace">
                             <div class="product-overlay">
                                 <button class="btn-quick-view">Quick View</button>
                                 <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Gold Hoop Earrings</h3>
-                            <p class="product-category">Earrings</p>
+                            <h3>Fine Diamond Necklace</h3>
+                            <p class="product-category">Necklaces</p>
                             <div class="product-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span>(4.7)</span>
+                                <span>(4.9)</span>
                             </div>
                             <div class="product-price">
-                                <span class="current-price">$899</span>
-                            </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="product4.jpg" alt="Silver Bracelet">
-                            <div class="product-overlay">
-                                <button class="btn-quick-view">Quick View</button>
-                                <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h3>Silver Chain Bracelet</h3>
-                            <p class="product-category">Bracelets</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.6)</span>
-                            </div>
-                            <div class="product-price">
-                                <span class="current-price">$599</span>
+                                <span class="current-price">$1,200</span>
                             </div>
                             <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
                         </div>
                     </div>
                 </div>
-                
-                <div class="section-cta">
-                    <button class="btn-primary">View All Products</button>
-                </div>
-            </div>
-        </section>
 
-        
-        <section class="newsletter">
-            <div class="container">
-                <div class="newsletter-content">
-                    <h2>Stay Updated</h2>
-                    <p>Subscribe to our newsletter for exclusive offers and new arrivals</p>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Enter your email address">
-                        <button class="btn-primary">Subscribe</button>
-                    </div>
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="btn-pagination active">1</button>
+                    <button class="btn-pagination">2</button>
+                    <button class="btn-pagination">3</button>
+                    <button class="btn-pagination">Next <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </section>
     </main>
 
-    
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
