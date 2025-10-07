@@ -8,31 +8,26 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    
     <header class="main-header">
         <div class="header-top">
             <div class="container">
-                <div class="header-info">
-                </div>
+                <div class="header-info"></div>
                 <div class="header-links">
-                    <span>Free Shipping on orders over $100</span>
+                    <span>Free Shipping on orders over ৳11,000</span>
                 </div>
             </div>
         </div>
-        
         <nav class="main-nav">
             <div class="container">
                 <div class="nav-brand">
                     <h1><i class="fas fa-gem"></i> Luxury Jewelry</h1>
                 </div>
-                
                 <div class="nav-search">
                     <div class="search-box">
                         <input type="text" placeholder="Search for jewelry...">
                         <button><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                
                 <div class="nav-actions">
                     <a href="#" class="nav-link"><i class="fas fa-user"></i> Account</a>
                     <a href="#" class="nav-link"><i class="fas fa-heart"></i> Wishlist</a>
@@ -41,7 +36,6 @@
                     </a>
                 </div>
             </div>
-            
             <div class="nav-menu">
                 <div class="container">
                     <ul class="main-menu">
@@ -56,7 +50,6 @@
     </header>
 
     <main>
-        
         <section class="page-header">
             <div class="container">
                 <h1>Our Exclusive Jewelry Collection</h1>
@@ -64,48 +57,47 @@
             </div>
         </section>
 
-       
         <section class="product-filters">
             <div class="container">
                 <div class="filter-controls">
                     <div class="filter-group">
                         <label>Category:</label>
-                        <select>
-                            <option>All Products</option>
-                            <option>Rings</option>
-                            <option>Necklaces</option>
-                            <option>Earrings</option>
-                            <option>Bracelets</option>
+                        <select id="categoryFilter">
+                            <option value="all">All Products</option>
+                            <option value="Rings">Rings</option>
+                            <option value="Necklaces">Necklaces</option>
+                            <option value="Earrings">Earrings</option>
+                            <option value="Bracelets">Bracelets</option>
                         </select>
                     </div>
                     <div class="filter-group">
                         <label>Price Range:</label>
-                        <select>
-                            <option>All Prices</option>
-                            <option>Under $500</option>
-                            <option>$500 - $1000</option>
-                            <option>$1000 - $2000</option>
-                            <option>Over $2000</option>
+                        <select id="priceFilter">
+                            <option value="all">All Prices</option>
+                            <option value="under5000">Under ৳55,000</option>
+                            <option value="5000to110000">৳55,000 - ৳110,000</option>
+                            <option value="110000to220000">৳110,000 - ৳220,000</option>
+                            <option value="over220000">Over ৳220,000</option>
                         </select>
                     </div>
                     <div class="filter-group">
                         <label>Sort By:</label>
-                        <select>
-                            <option>Featured</option>
-                            <option>Price: Low to High</option>
-                            <option>Price: High to Low</option>
-                            <option>Newest</option>
+                        <select id="sortFilter">
+                            <option value="featured">Featured</option>
+                            <option value="priceLowHigh">Price: Low to High</option>
+                            <option value="priceHighLow">Price: High to Low</option>
+                            <option value="newest">Newest</option>
                         </select>
                     </div>
                 </div>
             </div>
         </section>
 
-       
         <section class="products-section">
             <div class="container">
                 <div class="products-grid">
-                    <div class="product-card">
+
+                    <div class="product-card" data-category="Necklaces" data-price="27500">
                         <div class="product-image">
                             <img src="product1.jpg" alt="Fine Necklace with Pendant">
                             <div class="product-overlay">
@@ -116,22 +108,14 @@
                         <div class="product-info">
                             <h3>Fine Necklace with Pendant</h3>
                             <p class="product-category">Necklaces</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.8)</span>
-                            </div>
                             <div class="product-price">
-                                <span class="current-price">$250</span>
+                                <span class="current-price">৳15,500</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-category="Necklaces" data-price="88000">
                         <div class="product-image">
                             <img src="product2.jpg" alt="Gold Necklace">
                             <div class="product-overlay">
@@ -142,22 +126,15 @@
                         <div class="product-info">
                             <h3>Gold Necklace</h3>
                             <p class="product-category">Necklaces</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.9)</span>
-                            </div>
                             <div class="product-price">
-                                <span class="current-price">$800</span>
+                                <span class="current-price">৳88,000</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
+                            
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-category="Bracelets" data-price="38500">
                         <div class="product-image">
                             <img src="product3.jpg" alt="Pearl Bracelet">
                             <div class="product-overlay">
@@ -168,22 +145,14 @@
                         <div class="product-info">
                             <h3>Pearl Bracelet</h3>
                             <p class="product-category">Bracelets</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.7)</span>
-                            </div>
                             <div class="product-price">
-                                <span class="current-price">$350</span>
+                                <span class="current-price">৳38,500</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-category="Earrings" data-price="187000">
                         <div class="product-image">
                             <img src="product4.jpg" alt="Diamond Earrings">
                             <div class="product-overlay">
@@ -194,22 +163,14 @@
                         <div class="product-info">
                             <h3>Diamond Earrings</h3>
                             <p class="product-category">Earrings</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.9)</span>
-                            </div>
                             <div class="product-price">
-                                <span class="current-price">$1,700</span>
+                                <span class="current-price">৳187,000</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-category="Earrings" data-price="165000">
                         <div class="product-image">
                             <img src="product5.jpg" alt="Gold Earrings">
                             <div class="product-overlay">
@@ -220,22 +181,14 @@
                         <div class="product-info">
                             <h3>Gold Earrings</h3>
                             <p class="product-category">Earrings</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.6)</span>
-                            </div>
                             <div class="product-price">
-                                <span class="current-price">$1,500</span>
+                                <span class="current-price">৳165,000</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-category="Rings" data-price="242000">
                         <div class="product-image">
                             <img src="product6.jpg" alt="Luxury Diamond Ring">
                             <div class="product-overlay">
@@ -246,22 +199,14 @@
                         <div class="product-info">
                             <h3>Luxury Diamond Ring</h3>
                             <p class="product-category">Rings</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.9)</span>
-                            </div>
                             <div class="product-price">
-                                <span class="current-price">$2,200</span>
+                                <span class="current-price">৳242,000</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-category="Necklaces" data-price="42000">
                         <div class="product-image">
                             <img src="product7.jpg" alt="Pearl Necklace">
                             <div class="product-overlay">
@@ -272,79 +217,51 @@
                         <div class="product-info">
                             <h3>Pearl Necklace</h3>
                             <p class="product-category">Necklaces</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.8)</span>
-                            </div>
                             <div class="product-price">
-                                <span class="current-price">$1,200</span>
+                                <span class="current-price">৳42,000</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-category="Necklaces" data-price="222000">
                         <div class="product-image">
-                            <img src="product8.jpg" alt="Fine Diamond Necklace">
+                            <img src="product8.jpg" alt="Luxury Diamond Necklace">
                             <div class="product-overlay">
                                 <button class="btn-quick-view">Quick View</button>
                                 <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Fine Diamond Necklace</h3>
+                            <h3>Luxury Diamond Necklace</h3>
                             <p class="product-category">Necklaces</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.9)</span>
-                            </div>
                             <div class="product-price">
-                                <span class="current-price">$1,200</span>
+                                <span class="current-price">৳222,000</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product-card">
+
+                    <div class="product-card" data-category="Necklaces" data-price="92000">
                         <div class="product-image">
-                            <img src="product9.jpg" alt="Fine necklace">
+                            <img src="product9.jpg" alt="Fine Necklace">
                             <div class="product-overlay">
                                 <button class="btn-quick-view">Quick View</button>
                                 <button class="btn-wishlist"><i class="fas fa-heart"></i></button>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Fine necklace</h3>
-                            <p class="product-category">Bracelets</p>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(4.7)</span>
-                            </div>
+                            <h3>Fine Necklace</h3>
+                            <p class="product-category">Necklaces</p>
                             <div class="product-price">
-                                <span class="current-price">$350</span>
+                                <span class="current-price">৳92,000</span>
                             </div>
-                            <button class="btn-add-cart" onclick="buyProduct()">Add to Cart</button>
+                            <button class="btn-add-cart" onclick="buyProduct(event)">Add to Cart</button>
                         </div>
                     </div>
-                </div>
 
-                <!-- Pagination -->
-                <div class="pagination">
-                    <button class="btn-pagination active">1</button>
-                    <button class="btn-pagination">2</button>
-                    <button class="btn-pagination">3</button>
-                    <button class="btn-pagination">Next <i class="fas fa-arrow-right"></i></button>
+
+
                 </div>
             </div>
         </section>
@@ -407,6 +324,8 @@
             </div>
         </div>
     </footer>
+    
+
     <script src="script.js"></script>
 </body>
 </html>
